@@ -1,11 +1,8 @@
 #include "Pad.h"
 
 void Pad::Update() {
-
-    bool moveLeft = GetAsyncKeyState('A') != 0;
-    bool moveRight = GetAsyncKeyState('D') != 0;
-    moveLeft = GetAsyncKeyState(VK_LEFT) != 0;
-    moveRight = GetAsyncKeyState(VK_RIGHT) != 0;
+    bool moveLeft = (GetAsyncKeyState('A') != 0) || (GetAsyncKeyState(VK_LEFT) != 0);
+    bool moveRight = (GetAsyncKeyState('D') != 0) || (GetAsyncKeyState(VK_RIGHT) != 0);
     
 
 
