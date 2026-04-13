@@ -1,7 +1,26 @@
 #include "Ball.h"
 
 bool Ball::IsCollidingWith(GameObject* other) {
-    return position == other->GetPosition();
+    Vector2 otherPos = other->GetPosition();
+
+    // if collosion is with pad check the collision and if pad is not an empty pointer
+    Pad* pad = dynamic_cast<Pad*>(other);
+    if (pad != nullptr) {
+        int width = pad->GetWidth();
+
+        //same row
+        if (position.y == otherPos.y) {
+            // inside pad width
+            if (position.x >= otherPos.x - width &&
+                position.x <= otherPos.x + width) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    // otherwise, normal behaiviour
+    return position == otherPos;
 }
 
 bool Ball::HasObjectAtPosition(int x, int y) {

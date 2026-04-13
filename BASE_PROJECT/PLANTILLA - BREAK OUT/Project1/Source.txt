@@ -1,0 +1,3 @@
+Archivos modificados:
+Ball cpp
+funcion iscolliding with de la clase gameobject

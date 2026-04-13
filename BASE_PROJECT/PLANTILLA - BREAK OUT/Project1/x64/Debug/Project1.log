@@ -1,8 +1,2 @@
-﻿  Ball.cpp
-  ConsoleControl.cpp
-  GameObject.cpp
-  main.cpp
-  Pad.cpp
-  Generando código...
-  LINK : no se encontró C:\Users\PC\source\repos\Nueva carpeta (2)\BASE_PROJECT\PLANTILLA - BREAK OUT\x64\Debug\Project1.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
+﻿  Pad.cpp
   Project1.vcxproj -> C:\Users\PC\source\repos\Nueva carpeta (2)\BASE_PROJECT\PLANTILLA - BREAK OUT\x64\Debug\Project1.exe
